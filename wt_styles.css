@@ -1,0 +1,379 @@
+
+@charset "utf-8";
+
+/*
+   
+   
+   Author:   Hardik Hariyani
+   Date:     7/23/2019
+   
+   Filename: wt_styles.css
+   
+   This file contains the layout styles used in webtiger home page.
+
+*/
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+   background: url(wt_hexback.jpg) 100%/cover no-repeat;
+   background-attachment: fixed;
+   height: 100%;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+   opacity:0.95;
+}
+
+body {
+   background: white;   
+   box-shadow: rgb(242, 244, 247) 5px 0px 15px,
+               rgb(242, 244, 247) -5px 0px 15px;
+   margin: 0px auto;
+   min-height: 100%;
+   min-width: 320px;
+   max-width: 1024px;
+   width: 100%;
+}
+
+/* Body Header Styles */
+
+body header {
+   background: white;   
+}
+
+body header img {
+	
+   display: block;
+   width: 100%;
+   
+   
+}
+header, footer {
+	 
+	 width: 100%;
+ }
+
+/* Top Navigation Styles */
+
+nav.topnav ul li {
+	
+	background-color:MidnightBlue;	
+	display: block;
+	text-align: center;
+			
+}
+
+nav.topnav ul li a {
+	color: white;	
+	display: block;
+	height: 3em;	
+	text-align: center;
+	line-height: 3em;	
+	font-size: 1.2em;
+}
+nav.topnav li a#home{
+	background-color:rgb(90, 93, 97);
+	text-shadow: 2px 2px 4px #000000;
+}
+
+nav.topnav a:link, nav.topnav a:visited {
+	color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+nav.topnav a:hover, nav.topnav a:active {
+	background-color:#A52A2A;
+	text-shadow: 2px 2px 4px #000000;
+	
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.container {
+  position: relative;
+  
+ 
+}
+
+a::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+
+
+
+/* Section Styles */
+
+section {
+   background-color: white;
+   
+}
+
+
+ article h1 {
+	
+	color:	#663399;
+    font-size: 2em;
+    line-height: 1.4;
+    margin: 10px 0px;
+	text-transform:uppercase;
+	text-shadow: #FFA07A 2px 2px 1px,
+	             rgba(0,255, 255, 0.6) 5px 5px 25px;
+ }
+ section img {
+   display: block;
+   width: 100%;
+}
+/*image special effects */
+#mainimage {
+  
+  transition: width 2s;
+  -webkit-transition: width 2s; /* Safari 3.1 to 6.0 */
+}
+
+#mainimage:hover {
+  width: 90%;
+}
+section p {
+   line-height: 1.4em;
+   padding: 10px;
+   font-size: 1.2em;
+}
+
+/* Aside Styles */
+
+aside {
+	margin-top:0.5em;
+	margin-left:0.5em;
+	opacity:0.8;
+	color:white;
+    display: block;
+    background: radial-gradient(rgb(220,220,220),rgb(96,96,96));;
+	border: 2px solid gray;
+	border-radius: 20px 60px 100px 35px;
+	box-shadow: rgba(192,192,192, 0.4)0px 0px 20px 10px;
+}
+body > aside > dl {
+   
+   margin: 10px;
+   padding:5px;
+   font-size:1.25em;
+}
+ aside h1 {
+	 font-weight: 900;
+    letter-spacing: 0.4em;
+	color:	rgb(67, 50, 226);
+    font-size: 2em;
+    line-height: 1.4;
+    margin-top: 0.5em;
+	margin-left:1em;
+	text-transform:uppercase;
+	text-shadow: #FFA07A 2px 2px 1px,
+	             rgba(0,255, 255, 0.6) 5px 5px 25px;
+ }
+
+hr {
+	  border: 2px solid white;
+	  border-radius:15px;
+	  width:90%;
+	  opacity:0.5;
+	  
+    
+ }
+body > aside dd {
+	text-shadow: rgb(56,56,56)2px 2px 1px,
+	             rgba(0,255, 255, 0.6) 5px 5px 25px;
+   
+   line-height: 1.2em;
+   margin-top: 5px;
+}
+body > aside dt {
+	margin-top: 5px;
+	font-size:1.2em;
+	color:MidnightBlue;
+}
+
+
+/* flex styles */
+body {
+	display:-webkit-flex;
+	display:flex;
+	
+	-webkit-flex-flow:row wrap;
+	flex-flow:row wrap;
+}
+ header, footer {
+	 
+	 width: 100%;
+ }
+ 
+ 
+ 
+ section {
+	 
+	flex: 3 1 500px;
+ }
+ aside {
+	flex:1 2 200px;
+	
+ }
+
+/* Footer Styles */
+
+footer {
+    clear:left;
+	float:left;
+    width: 100%;
+}
+footer p {
+	color:white;
+	background-color: black;
+	margin-top:5px;
+	padding:5px;
+	line-height:1.5em;
+}
+
+footer::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* ==============================================================
+	General Styles for All Devices BOTTOM NAVIGATION AND Footer
+   ==============================================================
+*/
+nav.bnav { 
+         display: -webkit-flex; display: flex; 
+          -webkit-flex-flow: row nowrap; 
+         flex-flow: row nowrap;
+	     -webkit-justify-content: center;
+          justify-content: center;
+ }
+	
+nav.bnav ul {
+	
+	-webkit-flex: 1 1 225px;
+	 flex: 1 1 225px;
+	 
+	
+}
+nav.bnav a:link, nav.bnav a:visited {
+	color: MidnightBlue;
+	
+	text-decoration: none;
+  
+}
+
+nav.bnav a:hover, nav.bnav a:active {
+	color:#FF8C00;
+	text-decoration: underline;
+    text-decoration-color: red;
+	
+}
+
+	
+
+body > footer {
+   color:	#A52A2A;
+   background-color:#1affff;
+   font-size: 0.9em;
+   text-align: center;
+   padding: 10px 0px;
+}
+
+
+
+ 
+
+/* New Styles for different devices */
+
+
+/* ============================================
+   Mobile Styles: 0 to 480 px
+   ============================================
+*/
+
+@media only screen and (max-width: 480px) {
+	
+	.topnav li {
+		display:-webkit-flex;
+		display:flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		
+		
+	}
+	
+	.topnav a {
+		
+		font-size: 1.5 em;
+		line-height: 2.2 em;
+		
+	}
+	
+	
+}
+
+/* ============================================
+   Tablet Styles: 481px and greater
+   ============================================
+*/
+
+@media only screen and (min-width: 481px) {
+	
+ .topnav ul {
+	 width:100%;
+ }
+	
+
+.topnav li {
+	
+		float:left;
+		width:20%
+	}
+	
+	
+	
+}
+/* ============================================
+   Desktop Styles: 769px and greater
+   ============================================
+*/
+
+@media only screen and (min-width: 769px) {
+	
+	
+	
+	nav.topnav::after{
+		clear: both;
+		content: "";
+		display: table;
+	}
+	
+	
+	
+}

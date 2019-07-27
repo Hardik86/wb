@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*
+   Final Project
+   Webtiger
+   
+   Author:   Hardik Hariyani
+   Date:     7/10/2019
+   
+   Filename: tf_navicon.css
+   
+   This file contains styles used to control 
+   a navicon menu.
+
+*/
+
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+     a#navicon {
+	display:none;
+  }
+
+
+
+/* ===============================
+   Mobile Devices: 0 to 480px 
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+	
+     a#navicon {
+	display:block;
+    }
+  
+   nav#top ul {
+	   display:none;
+    }
+   
+   a#navicon:hover+ul, nav#top ul:hover{
+	   display:block;
+    }
+	
+	
+  }

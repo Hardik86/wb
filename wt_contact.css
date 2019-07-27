@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+/*
+   
+   
+   Author:   Hardik Hariyani
+   Date:     7/17/2019
+   
+   Filename: wt_contact.css
+   
+   This file contains the layout styles used in webtiger expertise page.
+
+*/
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+   background: url("binery.png") 100%/ cover no-repeat;
+   background-attachment: fixed;
+   height: 100%;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+   
+}
+
+body {
+  background-image: linear-gradient(to right, rgba(0, 0, 255, 0.5),rgba(100,0,0,0.5),rgba(0, 128, 0, 0.5)
+  ,rgba(255,165, 0, 0.5));
+   box-shadow: rgb(242, 244, 247) 5px 0px 15px,
+               rgb(242, 244, 247) -5px 0px 15px;
+   margin: 0px auto;
+   min-height: 100%;
+   min-width: 320px;
+   max-width: 1024px;
+   width: 100%;
+}
+
+/* Body Header Styles */
+
+body header {
+   background: white;   
+}
+
+body header img {
+	
+   display: block;
+   width: 100%;
+   
+   
+}
+header, footer {
+	 
+	 width: 100%;
+	 opacity:0.7;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+/* Top Navigation Styles */
+
+nav.topnav ul li {
+	
+	background-color:MidnightBlue;	
+	display: block;
+	text-align: center;
+			
+}
+
+nav.topnav ul li a {
+	color: white;	
+	display: block;
+	height: 3em;	
+	text-align: center;
+	line-height: 3em;	
+	font-size: 1.2em;
+}
+
+nav.topnav li a#contact{
+	background-color:rgb(90, 93, 97);
+	text-shadow: 2px 2px 4px #000000;
+}
+nav.topnav a:link, nav.topnav a:visited {
+	color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+nav.topnav a:hover, nav.topnav a:active {
+	background-color:#A52A2A;
+	text-shadow: 2px 2px 4px #000000;
+	
+}
+ a#nwacc:link,  a#nwacc:visited {
+	color:green;
+  
+}
+ a#nwacc:hover,  a#nwacc:active {
+	color:red;
+	
+	
+}
+a::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/*Article Styles */
+
+section {
+	
+	
+	color:white;
+	line-height:2em;
+	width:70%;
+	text-align:center-left;
+	margin:1%;
+	
+	
+}
+section h1 {
+	font-size:2em;
+	text-decoration: underline gray;
+}
+section h2 {
+	font-size:1.2em;
+}
+p {
+	font-size:1.3em;
+}
+#nwacc {
+	font-size:1.5em;
+	 
+ 
+}
+
+ h3 {
+	font-size:1.2em;
+}
+#us {
+	font-size:1.5em;
+	
+  
+  background: -webkit-radial-gradient(blue 33.33%,white 33.33%, red 33.33%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+
+adddress {
+	font-size:2em;
+}
+
+aside {
+	
+	
+  width:30%;
+  background: url("wt_ind.png") 100%/cover no-repeat;
+  opacity:0.7;
+  
+}
+ aside h1 {
+	 line-height:2em;
+	 margin-left:3em;
+	 margin-top:2em;
+	 font-size: 2em;
+	 background: -webkit-linear-gradient(rgb(255,140,0)40%, white 20%,rgb(124,252,0) 40% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   
+ }
+hr {
+	
+} 
+
+.m {
+	color:orange;
+}
+
+/* Clear floats after the columns */
+
+
+ 
+/* flex styles */
+body {
+	display:-webkit-flex;
+	display:flex;
+	
+	-webkit-flex-flow:row wrap;
+	flex-flow:row wrap;
+}
+ header, footer {
+	 
+	 width: 100%;
+ }
+ 
+ 
+  body {
+	display:-webkit-flex;
+	display:flex;
+	
+	-webkit-flex-flow:row wrap;
+	flex-flow:row wrap;
+}
+ header, footer {
+	 
+	 width: 100%;
+ }
+ 
+ 
+ aside {
+	flex:1 1 200px;
+	
+ }
+ section {
+	 
+	flex: 3 1 350px;
+ }
+ 
+
+
+
+ 
+
+ 
+ 
+/* Clear floats after the columns */
+
+
+
+footer {
+    clear:left;
+	float:left;
+    width: 100%;
+}
+footer p {
+	color:white;
+	background-color: black;
+	margin-top:5px;
+	padding:5px;
+	line-height:1.5em;
+}
+
+footer::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* ==============================================================
+	General Styles for All Devices BOTTOM NAVIGATION AND Footer
+   ==============================================================
+*/
+nav.bnav { 
+         display: -webkit-flex; display: flex; 
+          -webkit-flex-flow: row nowrap; 
+         flex-flow: row nowrap;
+	     -webkit-justify-content: center;
+          justify-content: center;
+ }
+	
+nav.bnav ul {
+	
+	-webkit-flex: 1 1 225px;
+	 flex: 1 1 225px;
+	 
+	
+}
+nav.bnav a:link, nav.bnav a:visited {
+	color: MidnightBlue;
+	
+	text-decoration: none;
+  
+}
+
+nav.bnav a:hover, nav.bnav a:active {
+	color:#FF8C00;
+	text-decoration: underline;
+    text-decoration-color: red;
+	
+}
+
+	
+
+body > footer {
+   color:	#A52A2A;
+   background-color:#1affff;
+   font-size: 0.9em;
+   text-align: center;
+   padding: 10px 0px;
+}
+
+
+
+ 
+
+/* New Styles for different devices */
+
+
+/* ============================================
+   Mobile Styles: 0 to 480 px
+   ============================================
+*/
+
+@media only screen and (max-width: 480px) {
+	
+	.topnav li {
+		display:-webkit-flex;
+		display:flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		
+		
+	}
+	
+	.topnav a {
+		
+		font-size: 1.5 em;
+		line-height: 2.2 em;
+		
+	}
+	
+	html {
+		background:white;}
+}
+
+/* ============================================
+   Tablet Styles: 481px and greater
+   ============================================
+*/
+
+@media only screen and (min-width: 481px) {
+	
+ .topnav ul {
+	 width:100%;
+ }
+	
+
+.topnav li {
+	
+		float:left;
+		width:20%
+	}
+	
+	
+
+	
+}

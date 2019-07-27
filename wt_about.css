@@ -1,0 +1,352 @@
+@charset "utf-8";
+
+/*
+   
+   
+   Author:   Hardik Hariyani
+   Date:     7/23/2019
+   
+   Filename: wt_about.css
+   
+   This file contains the layout styles used in webtiger who we are? page.
+
+*/
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+   background: url(wt_hexback.jpg) 100%/cover no-repeat;
+   background-attachment: fixed;
+   height: 100%;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+   
+}
+
+body {
+   background: white;   
+   box-shadow: rgb(242, 244, 247) 5px 0px 15px,
+               rgb(242, 244, 247) -5px 0px 15px;
+   margin: 0px auto;
+   min-height: 100%;
+   min-width: 320px;
+   max-width: 1024px;
+   width: 100%;
+}
+
+/* Body Header Styles */
+
+body header {
+   background: white;   
+}
+
+body header img {
+	
+   display: block;
+   width: 100%;
+   
+   
+}
+header, footer {
+	 
+	 width: 100%;
+ }
+ div#h1 {
+	 
+	 margin-left: auto;
+	 margin-right: auto;
+	  margin-top:3%;
+	 margin-bottom:3%;
+	 text-align: center;
+	 box-shadow: #1affff 5px 0px 15px,
+                 #1affff -5px 0px 15px;
+				 
+				 
+ }
+ span {
+	  background-color: #f18973;
+ }
+ h1 {
+	  font-family: Times New Roman;
+	  font-weight: bold;
+	 padding-top:1%;
+	 color:MidnightBlue;
+	 font-size:1.3em;
+	 text-align: center;
+	 margin-top:5%;
+	 margin-bottom:5%;
+	 
+ }
+ 
+ h2 {
+	 margin-top:5%;
+	 font-size:2em;
+	 color:#A52A2A;
+	 text-decoration: underline;
+	 text-decoration-color:MidnightBlue;
+	 
+ }
+ 
+ div#left, div#right {
+	  background-color:rgba(255,215,0, 0.3);
+ }
+ div#middle {
+	background-color:rgba(230,230,250, 0.3);
+ }
+ .column p {
+	 line-height: 1.3;
+	 margin-top:5%;
+	 margin-bottom:5%;
+	 color:MidnightBlue;
+	 font-size:1.5em;
+     
+  font-family: Helvetica, Arial, sans-serif;
+
+ }
+ .column > p:first-of-type {
+	 font-size:2em;
+    color: red;
+    font-style: italic;
+	font-weight: bold;
+	
+}
+ 
+
+/* Top Navigation Styles */
+
+nav.topnav ul li {
+	
+	background-color:MidnightBlue;	
+	display: block;
+	text-align: center;
+			
+}
+
+nav.topnav ul li a {
+	color: white;	
+	display: block;
+	height: 3em;	
+	text-align: center;
+	line-height: 3em;	
+	font-size: 1.2em;
+}
+nav.topnav li a#about{
+	background-color:rgb(90, 93, 97);
+	text-shadow: 2px 2px 4px #000000;
+}
+nav.topnav a:link, nav.topnav a:visited {
+	color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+nav.topnav a:hover, nav.topnav a:active {
+	background-color:#A52A2A;
+	text-shadow: 2px 2px 4px #000000;
+	
+}
+a::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+
+ 
+
+/*Column Styles */
+
+
+/* Clear floats after the columns */
+body {
+	display:-webkit-flex;
+	display:flex;
+	
+	-webkit-flex-flow:row wrap;
+	flex-flow:row wrap;
+}
+
+
+
+ div.row{
+	 display:-webkit-flex;
+	display:flex;
+	
+	-webkit-flex-flow:row wrap;
+	flex-flow:row wrap;
+}
+ 
+ .column{
+	 -webkit-flex: 1 1 300px;
+	 flex: 1 1 300px;
+	 
+ }
+ 
+ div.column {
+	 padding: 5px;
+	
+	color:white;
+	margin:2%;
+	 border: 1px solid black;
+    outline-style: solid;
+    outline-color: MidnightBlue;
+	box-shadow: rgba(68, 98, 145, 0.3) 0px 0px 10px 10px;
+
+ }
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+    clear:left;
+	float:left;
+    width: 100%;
+}
+footer p {
+	color:white;
+	background-color: black;
+	margin-top:5px;
+	padding:5px;
+	line-height:1.5em;
+}
+
+footer::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* ==============================================================
+	General Styles for All Devices BOTTOM NAVIGATION AND Footer
+   ==============================================================
+*/
+nav.bnav { 
+         display: -webkit-flex; display: flex; 
+          -webkit-flex-flow: row nowrap; 
+         flex-flow: row nowrap;
+	     -webkit-justify-content: center;
+          justify-content: center;
+ }
+	
+nav.bnav ul {
+	
+	-webkit-flex: 1 1 225px;
+	 flex: 1 1 225px;
+	 
+	
+}
+nav.bnav a:link, nav.bnav a:visited {
+	color: MidnightBlue;
+	
+	text-decoration: none;
+  
+}
+
+nav.bnav a:hover, nav.bnav a:active {
+	color:#FF8C00;
+	text-decoration: underline;
+    text-decoration-color: red;
+	
+}
+
+	
+
+body > footer {
+   color:	#A52A2A;
+   background-color:#1affff;
+   font-size: 0.9em;
+   text-align: center;
+   padding: 10px 0px;
+}
+
+
+
+ 
+
+/* New Styles for different devices */
+
+
+/* ============================================
+   Mobile Styles: 0 to 480 px
+   ============================================
+*/
+
+@media only screen and (max-width: 480px) {
+	
+	.topnav li {
+		display:-webkit-flex;
+		display:flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		
+		
+	}
+	
+	.topnav a {
+		
+		font-size: 1.5 em;
+		line-height: 2.2 em;
+		
+	}
+	
+	
+}
+
+/* ============================================
+   Tablet Styles: 481px and greater
+   ============================================
+*/
+
+@media only screen and (min-width: 481px) {
+	
+ .topnav ul {
+	 width:100%;
+ }
+	
+
+.topnav li {
+	
+		float:left;
+		width:20%
+	}
+	
+	
+	
+}
+/* ============================================
+   Desktop Styles: 769px and greater
+   ============================================
+*/
+
+@media only screen and (min-width: 769px) {
+	
+	
+	
+	nav.topnav::after{
+		clear: both;
+		content: "";
+		display: table;
+	}
+	
+	
+	section#main {
+		float: left;
+		margin-right:5%;
+		width: 70%;
+	}
+	
+	aside {
+		float: left;
+		width: 25%
+		
+	}
+}
